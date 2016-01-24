@@ -21,6 +21,7 @@ with hfss.App() as App:
                                 3, 
                                 4,
                                 5,
+								6,
                                 Name='Box1',
                                 Color=(255, 0, 0))
 
