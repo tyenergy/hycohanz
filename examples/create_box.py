@@ -21,7 +21,11 @@ with hfss.App() as App:
                                 3, 
                                 4,
                                 5,
+<<<<<<< HEAD
 								6,
+=======
+                                6，
+>>>>>>> origin/devel
                                 Name='Box1',
                                 Color=(255, 0, 0))
 

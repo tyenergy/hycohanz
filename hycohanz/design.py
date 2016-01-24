@@ -64,7 +64,7 @@ def solve(oDesign,setup_name_list):
 
     Parameters
     ----------
-    oDesktop : pywin32 COMObject
+    oDesign : pywin32 COMObject
         HFSS Desktop object.
     
     Returns
@@ -78,3 +78,23 @@ def solve(oDesign,setup_name_list):
     
     """
     return oDesign.Solve([setup_name_list])
+    
+def analyze(oDesign, setup_name):
+    """
+    Analyze Setup.
+    
+    Parameters
+    ----------
+    oDesign : pywin32 COMObject
+        The HFSS design upon which to operate.
+    setup_name : str
+        Name of Setup.  
+        Example: "Setup1"
+                 "Setup1: Sweep1"
+    
+    Returns
+    -------
+    None
+    
+    """
+    return oDesign.Analyze(setup_name)

@@ -38,7 +38,8 @@ from hycohanz.property import ( add_property,
                                 )
 
 from hycohanz.design import (get_module, 
-                             set_active_editor)
+                             set_active_editor,
+                             analyze)
 
 from hycohanz.expression import Expression
 from hycohanz.modeler3d import *
