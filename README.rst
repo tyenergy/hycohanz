@@ -16,7 +16,7 @@ Minimal Example
 
     [oAnsoftApp, oDesktop] = hfss.setup_interface()
 
-    raw_input('Press "Enter" to quit HFSS.>')
+    input('Press "Enter" to quit HFSS.>')
 
     hfss.quit_application(oDesktop)
 
