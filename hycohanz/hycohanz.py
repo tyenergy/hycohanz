@@ -29,7 +29,9 @@ from hycohanz.desktop import (quit_application,
                               close_current_project, 
                               get_projects, 
                               close_all_projects, 
-                              close_all_projects_except_current)
+                              close_all_projects_except_current,
+                              save_project,
+                              save_as_project)
 
 from hycohanz.project import *
 
