@@ -216,3 +216,21 @@ def save_as_project(oDesktop, filename,overwrite=True):
     """
     oProject = get_active_project(oDesktop)
     return oProject.SaveAs(filename,overwrite)
+
+def save_project(oDesktop):
+    """
+    Save an HFSS project.
+    
+    Parameters
+    ----------
+    oDesktop : pywin32 COMObject
+        The HFSS desktop object to which this function is applied.
+   
+    Returns
+    -------
+    oProject : pywin32 COMObject
+        An handle to the saved project.
+    
+    """
+    oProject = get_active_project(oDesktop)
+    return oProject.Save()
